@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "docker build -t 06992014/modular-task-manager:latest . && docker run -d -p 8080:80 06992014/modular-task-manager:latest"
+    "dev": "docker build -t 06992014/modular-task-manager:latest . && docker run -d -p 8080:80 06992014/modular-task-manager:latest",
+    "docker-build": "docker build -t 06992014/modular-task-manager:latest . && docker push 06992014/modular-task-manager:latest"
   },
   "author": "Maroko Gideon",
   "license": "MIT"
