@@ -1,0 +1,12 @@
+{
+  "name": "modular-tm",
+  "version": "1.0.0",
+  "description": "A lightweight, modular task manager built with vanilla JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "docker build -t modular-tm . && docker run -d -p 8080:80 modular-tm"
+  },
+  "author": "Maroko Gideon",
+  "license": "MIT"
+}
