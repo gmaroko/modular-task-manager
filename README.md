@@ -57,6 +57,11 @@ A lightweight, modular task manager built with vanilla JavaScript.
    docker build -t 06992014/modular-task-manager:latest .
    ```
 
+   OR Pull Image
+   ```bash
+   docker pull 06992014/modular-task-manager:latest
+   ```
+
 2. Run the container:
     ```bash
     docker run -p 8080:80 06992014/modular-task-manager:latest
