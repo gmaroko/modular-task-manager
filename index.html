@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Modular Task Manager</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <main>
     <h1>Task Manager</h1>
 
     <form id="task-form">
+      <label for="task-input">Task</label>
       <input type="text" id="task-input" placeholder="Add a new task..." required />
+
+      <label for="task-date">Due Date</label>
       <input type="date" id="task-date" />
+
+      <label for="task-category">Category</label>
       <select id="task-category">
         <option value="">None</option>
         <option value="Work">Work</option>
         <option value="Personal">Personal</option>
         <option value="Urgent">Urgent</option>
       </select>
+
       <button type="submit">Add</button>
     </form>
+
+
+
 
     <input type="text" id="search-input" placeholder="Search tasks..." />
     <p id="search-count"></p>
@@ -38,4 +49,5 @@
 
   <script type="module" src="src/app.js"></script>
 </body>
+
 </html>

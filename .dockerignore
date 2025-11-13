@@ -33,3 +33,7 @@ coverage
 # Logs
 *.log
 logs
+
+
+# Docs folder
+docs/

@@ -9,7 +9,7 @@ export function renderTasks(tasks, container) {
         <span class="title" contenteditable="false">${escapeHTML(task.title)}</span>
         ${task.dueDate ? `<small class="due">Due: ${new Date(task.dueDate).toLocaleDateString()}</small>` : ""}
         ${task.category ? `<small class="category">${escapeHTML(task.category)}</small>` : ""}
-        <button class="delete">🗑</button>
+        <button class="delete" aria-label="Delete task">🗑</button>
       </li>
     `;
   }).join("");
