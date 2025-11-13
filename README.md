@@ -81,3 +81,23 @@ A lightweight, modular task manager built with vanilla JavaScript.
 [MIT](https://opensource.org/license/MIT) — free to use, modify, and distribute.
 
 ---
+---
+
+## Screenshots
+
+### Lighthouse Report
+![LightHouse](./docs/ligthhouse.png)
+
+#### Landing Page
+![Landing Page](./docs/landing.png)
+
+### Task View With Filters
+#### All Tasks
+![All Tasks](./docs/all_tasks.png)
+
+#### Completed Tasks
+![Completed Tasks](./docs/completed_tasks.png)
+
+#### Pending Tasks
+
+![Pending Tasks](./docs/pending_tasks.png)
