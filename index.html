@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modular Task Manager</title>
+  <meta name="description" content="A modular task manager with categories, due dates, search, and drag-and-drop reordering." />
+  <title>Modular Task Manager - 2305</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <main>
-    <h1>Task Manager</h1>
+    <h1>📝 Modular Task Manager</h1>
 
     <form id="task-form">
-      <label for="task-input">Task</label>
-      <input type="text" id="task-input" placeholder="Add a new task..." required />
+      <div class="form-group">
+        <label for="task-input">Task</label>
+        <input type="text" id="task-input" name="task" placeholder="Add a new task..." required />
+      </div>
 
-      <label for="task-date">Due Date</label>
-      <input type="date" id="task-date" />
+      <div class="form-group">
+        <label for="task-date">Due Date</label>
+        <input type="date" id="task-date" name="due-date" />
+      </div>
 
-      <label for="task-category">Category</label>
-      <select id="task-category">
-        <option value="">None</option>
-        <option value="Work">Work</option>
-        <option value="Personal">Personal</option>
-        <option value="Urgent">Urgent</option>
-      </select>
+      <div class="form-group">
+        <label for="task-category">Category</label>
+        <select id="task-category" name="category">
+          <option value="">None</option>
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+          <option value="Urgent">Urgent</option>
+        </select>
+      </div>
 
       <button type="submit">Add</button>
     </form>
 
-
-
-
-    <input type="text" id="search-input" placeholder="Search tasks..." />
-    <p id="search-count"></p>
+    <input type="text" id="search-input" placeholder="Search tasks..." aria-label="Search tasks" />
 
     <div id="filters">
       <button data-filter="all">All</button>
@@ -44,10 +45,10 @@
 
     <ul id="task-list"></ul>
 
-    <p id="task-count"></p>
+    <div id="task-count"></div>
+    <div id="search-count"></div>
   </main>
 
   <script type="module" src="src/app.js"></script>
 </body>
-
 </html>
